@@ -30,9 +30,6 @@ public class SplashScreen {
                 if (!activity.isFinishing()) {
                     mSplashDialog = new Dialog(activity, themeResId);
                     int contentView = R.layout.launch_screen;
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                        contentView = R.layout.launch_screen_v31;
-                    }
                     mSplashDialog.setContentView(contentView);
                     mSplashDialog.setCancelable(false);
 
